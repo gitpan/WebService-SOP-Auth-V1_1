@@ -1,0 +1,100 @@
+{
+   "abstract" : "SOP version 1.1 authentication module",
+   "author" : [
+      "yowcowvg <yoko_ohyama [ at ] voyagegroup.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v2.2.0",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "WebService-SOP-Auth-V1_1",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author",
+         "builder"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.035"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion::Fast" : "0.04",
+            "Test::PAUSE::Permissions" : "0.04",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "Digest::SHA" : "0",
+            "HTTP::Request::Common" : "0",
+            "JSON::XS" : "0",
+            "URI" : "0",
+            "perl" : "5.008001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Exception" : "0",
+            "Test::Mock::Guard" : "0",
+            "Test::More" : "0.98",
+            "Test::Perl::Critic" : "0",
+            "Test::Pod::Coverage" : "0",
+            "Test::Pretty" : "0",
+            "Test::Stub" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "WebService::SOP::Auth::V1_1" : {
+         "file" : "lib/WebService/SOP/Auth/V1_1.pm",
+         "version" : "0.01"
+      },
+      "WebService::SOP::Auth::V1_1::Request::GET" : {
+         "file" : "lib/WebService/SOP/Auth/V1_1/Request/GET.pm"
+      },
+      "WebService::SOP::Auth::V1_1::Request::POST" : {
+         "file" : "lib/WebService/SOP/Auth/V1_1/Request/POST.pm"
+      },
+      "WebService::SOP::Auth::V1_1::Request::POST_JSON" : {
+         "file" : "lib/WebService/SOP/Auth/V1_1/Request/POST_JSON.pm"
+      },
+      "WebService::SOP::Auth::V1_1::Util" : {
+         "file" : "lib/WebService/SOP/Auth/V1_1/Util.pm"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/researchpanelasia/p5-WebService-SOP-Auth-V1_1/issues"
+      },
+      "homepage" : "https://github.com/researchpanelasia/p5-WebService-SOP-Auth-V1_1",
+      "repository" : {
+         "url" : "git://github.com/researchpanelasia/p5-WebService-SOP-Auth-V1_1.git",
+         "web" : "https://github.com/researchpanelasia/p5-WebService-SOP-Auth-V1_1"
+      }
+   },
+   "version" : "0.01",
+   "x_authority" : "cpan:YOWCOW",
+   "x_contributors" : [
+      "t-sekiguchi <Takafumi_Sekiguchi@voyagegroup.com>",
+      "yowcowvg <yoko_ohyama@voyagegroup.com>"
+   ]
+}
